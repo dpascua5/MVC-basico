@@ -9,10 +9,69 @@
 </head>
 <body>
 
+
 <div class="container-fluid p-5 bg-primary text-white text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <div class="jumbotron">
+    <h1>Projecte proteïnes</h1>
+    <p>Aquesta pagina web ens permetrà preparar assajos de docking amb proteïnes i fàrmacs. Farem servir PHP, MySQL i bootstrap.</p>
+  </div>
 </div>
+
+<div class="container">
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <a class="navbar-brand" href="#">WebSiteName</a>
+		</div>
+		<ul class="nav navbar-nav">
+		  <li class="active"><a href="#">Home</a></li>
+		  <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Proteïnes
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Llistat</a></li>
+			  <li><a href="#">Crea</a></li>
+			  <li><a href="#">Modifica</a></li>
+			  <li><a href="#">Esborra</a></li>
+			</ul>
+		  </li>
+
+		  <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Fàrmacs
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Llistat</a></li>
+			  <li><a href="#">Crea</a></li>
+			  <li><a href="#">Modifica</a></li>
+			  <li><a href="#">Esborra</a></li>
+			</ul>
+		  </li>
+
+		  <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown" href="#">Assajos
+			<span class="caret"></span></a>
+			<ul class="dropdown-menu">
+			  <li><a href="#">Llistat</a></li>
+			  <li><a href="#">Crea</a></li>
+			  <li><a href="#">Modifica</a></li>
+			  <li><a href="#">Esborra</a></li>
+			</ul>
+		  </li>
+
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+		  <li><a href="#"><span class="glyphicon glyphicon-user"></span> David Pascual, Administrador</a></li>
+		  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		</ul>
+	  </div>
+	</nav>
+</div>
+
+
+
+
+
+
   
 <div class="container mt-5">
   <div class="row">
