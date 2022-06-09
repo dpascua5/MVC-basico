@@ -1,5 +1,6 @@
 <?php
 
+
 function head_html()
 {
 echo <<<EOT
@@ -10,6 +11,7 @@ echo <<<EOT
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -30,7 +32,7 @@ echo <<<EOT
 EOT;
 }
 
-function navegacion_html()
+function barra_navegacion_horizontal_html()
 {
 echo <<<EOT
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -41,7 +43,7 @@ echo <<<EOT
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Inici <span class="glyphicon glyphicon-envelope"></span></a>
+          <a class="nav-link" href="#">Inici <span class="glyphicon glyphicon-home"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#"></a>
@@ -71,8 +73,12 @@ echo <<<EOT
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#">Inici 2 <span class="glyphicon glyphicon-envelope"></span></a>
+          <a class="nav-link" href="#">David Pascual, Administrador<span class="glyphicon glyphicon-user"></span></a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">logout<span class="glyphicon glyphicon-log-out"></span></a>
+        </li>
+
 	  </ul>
 	
     </div>
