@@ -65,20 +65,27 @@ echo <<<EOT
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Fármacos</a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Ver Fármacos</a></li>
-			<li><a class="dropdown-item" href="#">Añadir Fármacos</a></li>
-			<li><a class="dropdown-item" href="#">Editar Fármacos</a></li>
+      			<li><a class="dropdown-item" href="#">Añadir Fármacos</a></li>
+			      <li><a class="dropdown-item" href="#">Editar Fármacos</a></li>
             <li><a class="dropdown-item" href="#">Borrar Fármacos</a></li>
           </ul>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+<!--        <li class="nav-item">
           <a class="nav-link" href="#">David Pascual, Administrador<span class="glyphicon glyphicon-user"></span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">logout<span class="glyphicon glyphicon-log-out"></span></a>
         </li>
-
+-->
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">DAVID PASCUAL, ADMIN <span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><span class="glyphicon glyphicon-edit"></span>Editar Perfil</a></li>
+            <li><a class="dropdown-item" href="#"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+          </ul>
+          </li>
 	  </ul>
 	
     </div>
