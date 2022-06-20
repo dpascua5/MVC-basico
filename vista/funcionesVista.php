@@ -98,9 +98,20 @@ function barra_navegacion_vertical()
 echo <<<EOT
 <!-- Inicio menú vertical-->
       <div class="col-sm-3">
-        <h3>Probando 3</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a style="border:solid 1px red" class="nav-link" href="#">Enlace 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enlace 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enlace 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Enlace 4</a>
+          </li>
+        </ul>
       </div>
 <!-- Fin menú vertical-->
 
