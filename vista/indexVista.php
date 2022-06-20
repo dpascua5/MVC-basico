@@ -5,22 +5,56 @@ head_html();
 echo "<body>\n";
 echo $sesion['nombre'];
 jumbotron_html();
-echo "</body>\n";
 barra_navegacion_horizontal_html();
+echo "\n<!--inicio contenidos menu vertical + especifico-->\n";
+echo "<div class='container-fluid mt-5'>\n";
+echo "\t<div class='row'>\n";
+barra_navegacion_vertical();
+echo "\n<!--inicio contenidos específico-->\n";
 
-?>
-  
-<div class="container-fluid mt-5">
-  <div class="row">
-    <div class="col-sm-3">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-    </div>
-    <div class="col-sm-9">
+echo "<div class='col-sm-9'>\n";
 
-<?php 
-//    print_r($listaFarmacos);
+echo '<table class="table table-hover">';
+echo "\n";
+
+echo "\t<tr>\n\t\t";
+foreach($listaFarmacos[0] as $x => $x_value)
+{
+    echo "<th>";
+    echo $x;
+    echo "</th>";
+}
+echo "\n\t</tr>\n";
+
+
+foreach($listaFarmacos as $farmaco)
+{
+//        print_r($farmaco);
+    echo "\t<tr>\n\t\t";
+    foreach($farmaco as $x => $x_value)
+    {
+        echo "<td>";
+        echo $x_value;
+        echo "</td>";
+    }
+    echo "\n\t</tr>\n";    
+}
+echo "</table>\n";
+
+echo "</div>\n";
+
+
+echo "\n<!--Fin contenidos específico-->\n";
+
+echo "\n<!--Fin contenidos menu vertical + especifico-->\n";
+echo "\t\t</div>\n";
+echo "\t</div>\n";
+
+echo "</body>\n";
+echo "</html>\n";
+
+
+/*    print_r($listaFarmacos);
     echo '<table class="table table-hover">';
     echo "\n";
 
@@ -46,17 +80,4 @@ barra_navegacion_horizontal_html();
         }
         echo "\n\t</tr>\n";    
     }
-    echo "</table>";
-?>
-
-
-
-
-    </div>
-  </div>
-</div>
-
-</body>
-</html>
-
-
+    echo "</table>";*/
